@@ -10,7 +10,8 @@ public class EnergyManager {
     private EnergySource activeSource;
 
     public EnergyManager(List<EnergySource> energySources, List<SmartObject> smartObjects) {
-        if (energySources == null || energySources.isEmpty()) {
+        //TODO try catch block 
+    	if (energySources == null || energySources.isEmpty()) {
             throw new IllegalArgumentException("Energy sources list cannot be null or empty!");
         }
         this.smartObjects = smartObjects;
